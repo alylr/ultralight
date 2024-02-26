@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Cards CSS</title>
+    <meta charset="utf-8" />
+    <style>
+      /* To come */
+      img {
+        max-width: 100%;
+      }
+      html,
+      body {
+        height: 100vh;
+      }
+      body {
+        margin: 0;
+        font-family: cursive;
+        font-size: 2em;
+        letter-spacing: 0.05em;
+      }
+      section {
+        height: 100vh;
+        background: black;
+        /*
+                   vertical centering with flexbox:
+                   https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/
+                */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .card {
+        width: 450px;
+        height: 300px;
+        background: white;
+        border-radius: 8px;
+        text-align: center;
+        /*
+                   vertical centering with flexbox:
+                   https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/
+                */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Fredoka";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .logo {
+        width: 150px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+      }
+      .name {
+        z-index: 2;
+      }
+      .title {
+        font-size: 12px;
+        text-align: right;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+      .line {
+        background: blueviolet;
+        height: 100%;
+        width: 5px;
+        position: absolute;
+        left: 100px;
+        z-index: 3;
+      }
+      .hline {
+        background: skyblue;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        bottom: 60px;
+      }
+      .innerline {
+        background: mediumpurple;
+        height: 100%;
+        width: 4px;
+        position: absolute;
+        left: 85px;
+        z-index: 5;
+      }
+      #two {
+        background: slategray;
+      }
+      #two .card {
+        font-family: cursive;
+      }
+      #two .hline {
+        bottom: 70px;
+      }
+      #two .line {
+        left: 80px;
+        background: rebeccapurple;
+        width: 12px;
+      }
+      #two .name {
+        font-family: "Papyrus";
+        font-family: cursive;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <section id="one">
+      <div class="card">
+        <div class="name">Aly Rubenstein</div>
+        <div class="logo">
+          <img src="ultralight-kite-image.png" />
+        </div>
+        <div class="title">
+          <i>Student</i><br />
+          VIS208. Graphic Design: Link<br />
+          (Ultralight)
+        </div>
+        <div class="line"></div>
+        <div class="hline"></div>
+      </div>
+    </section>
+
+    <section id="two">
+      <div class="card">
+        <div class="name">Alison Rubenstein</div>
+        <div class="logo">
+          <img src="ultralight-kite-image.png" />
+        </div>
+        <div class="title">
+          <i>Student</i><br />
+          VIS208. Graphic Design: Link<br />
+          (Ultralight)
+        </div>
+        <div class="line"></div>
+        <div class="hline"></div>
+        <div class="innerline"></div>
+      </div>
+    </section>
+    
+    <div>
+      <footer>Link to my class homepage: <a href="index.html">Aly VIS208 Homepage</a></footer>
+    </div>
+
+  </body>
+</html>
