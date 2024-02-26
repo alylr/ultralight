@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Feelings Tracker</title>
+    <meta charset="utf-8" />
+    <style>
+
+        /* template copied from: https://css-tricks.com/snippets/css/css-grid-starter-layouts/ */
+        /* and this reference https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_display_grid */
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto;
+            background-color: skyblue;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .not-dates {
+            background-color: rgba(182, 176, 176, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .amazing {
+            background-color: rgba(19, 243, 30, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .happy {
+            background-color: rgb(248, 248, 95);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .sad {
+            background-color: rgb(45, 102, 193);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .stressful {
+            background-color: rgb(245, 74, 74);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .bad {
+            background-color: rgb(45, 47, 92);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .adventurous {
+            background-color: rgba(251, 177, 56, 0.993);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .busy {
+            background-color: rgba(250, 96, 216, 0.993);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .calm {
+            background-color: rgba(182, 99, 188, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+
+        
+    </style>
+  </head>
+
+  <body>
+    <div>
+        <h1>Example Day in Colors Calendar</h1>
+    </div>
+
+    <div class="grid-container">
+        <h1>Color Legend</h1>
+        <div class="amazing">Amazing</div>
+        <div class="happy">Happy</div>
+        <div class="adventurous">Adventurous</div>
+        <div class="busy">Busy</div>
+        <div class="calm">Calm</div>
+        <div class="sad">Sad</div>
+        <div class="stressful">Stressful</div>
+        <div class="bad">Bad</div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="grid-container">
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1>MARCH</h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <div class="not-dates"></div>
+        <div class="not-dates"></div>
+        <div class="not-dates"></div>
+        <div class="not-dates"></div>
+        <div class="not-dates"></div>
+        <div class="busy">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="bad">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="amazing">9</div>
+        <div class="grid-item">10</div>
+        <div class="stressful">11</div>
+        <div class="grid-item">12</div>
+        <div class="happy">13</div>
+        <div class="grid-item">14</div>
+        <div class="grid-item">15</div>
+        <div class="grid-item">16</div>
+        <div class="grid-item">17</div>
+            <div class="sad">18</div>
+        <div class="grid-item">19</div>
+        <div class="grid-item">20</div>
+        <div class="adventurous">21</div>
+        <div class="grid-item">22</div>
+        <div class="grid-item">23</div>
+        <div class="grid-item">24</div>
+        <div class="grid-item">25</div>
+        <div class="grid-item">26</div>
+        <div class="grid-item">27</div>
+        <div class="grid-item">28</div>
+        <div class="grid-item">29</div>
+        <div class="calm">30</div>
+        <div class="grid-item">31</div>
+        <div class="not-dates"></div>
+        <div class="not-dates"></div>
+        <div class="not-dates"></div>
+        <div class="not-dates"></div>
+        <div class="not-dates"></div>
+        <div class="not-dates"></div>
+    </div>
+
+    <div>
+        <p>
+            Inspiration: <a href="https://www.silkandsonder.com/blogs/news/how-to-create-use-a-year-in-pixels-page">Year In Pixels</a>
+        </p>
+        <p>
+            references: <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_display_grid">link</a>
+        </p>
+    </div>
+        
+    <div>
+        Link to My Ultralight Ideas Page: <a href="Ultralight_ideas_week5.html">Ultralight Ideas</a>
+    </div>
+    
+    <div>
+        <footer>Link to my class homepage: <a href="index.html">Aly VIS208 Homepage</a></footer>
+    </div>
+    
+  </body>
+</html>
+
+
