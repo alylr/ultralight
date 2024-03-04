@@ -1,0 +1,734 @@
+<html>
+
+  <head>
+    <title>Aly's Library</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+    <style>
+
+
+        body {
+            padding: 5em;
+	        background-color: #fffff2;
+	        margin: 2em;
+            font-family: 'SF Pro Display','-apple-system','BlinkMacSystemFont','San Francisco','Helvetica Neue','Helvetica','Ubuntu','Roboto','Noto','Segoe UI','Arial',sans-serif;
+            font-size: 17px;
+            line-height: 24px;
+        }
+
+        main {
+            display: grid;
+            /*grid-template-columns: 25% 25% 25% 25%;*/
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /*grid-template-columns: auto auto auto auto;*/
+            /* grid-gap: 35px: */
+            margin-top: 5em;
+        }
+
+        .title {
+            font-size: 25px;
+            font-weight: bold;
+            max-width: 100%;
+
+        }
+        .subtitle {
+            font-size: 22px;
+            font-weight: lighter;
+            font-style: italic;
+        }
+
+        .author {
+            font-size: 17;
+            font-style: italic;
+        }
+
+
+        .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 400px;
+        perspective: 1000px;
+        }
+
+        .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+        }
+
+        .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+      /*  background-color: #bbb;
+        color: black; */
+        }
+
+        .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        }
+
+        img {
+            align-self: center;
+            max-width: 80%;
+            height: auto;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .school-class {
+            font-size: 15;
+        }
+
+        .recommended-by {
+            font-size: 15;
+        }
+
+        .nav-container {
+	        text-align: center;
+            z-index: 10;
+        }
+
+        nav {
+            padding: 1em;
+            border: 1px solid black;
+            border-radius: 50px;
+            font-size: 2em;
+            margin-bottom: 1em;
+            position: fixed;
+            left: 1em;
+            right: 1em;
+            top: 1em;
+            background: #fffff2;
+            z-index: 10;
+            font-family: "Indie Flower";
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        nav a {
+            display: inline-block;
+            margin-left: 0.25em;
+            margin-right: 0.25em;
+            text-decoration: none;
+        }
+
+
+        a {
+            color: black;
+            align-content: center;
+        }
+
+        a.current {
+            text-decoration: underline;
+        }
+
+        .overview {
+            margin-top: 3em;
+            font-family: "Indie Flower";
+        }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="nav-container">
+
+    <nav>
+        <a href="#" class="current">All</a>
+        <a href="recommended.html">Recommended</a>
+        <a href="princeton_books.html">Princeton</a>
+    </nav>
+
+    </div>
+    
+    <main>
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/rise_cover_v2.jpg">
+                    </div>
+                    <div class="flip-card-back" style="background-color: rgb(185, 141, 31);">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">Rise</span>
+                            <span class="subtitle">My Story</span>
+                        </div>
+                        <div class="author">Lindsey Vonn</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                        <a href="https://www.amazon.com/Rise-My-Story-Lindsey-Vonn/dp/0062889443">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/thinking_fast_slow_cover.jpg" alt="Thinking, Fast and Slow book cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: darkolivegreen;">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">Thinking, Fast and Slow</span>
+                        </div>
+                        <div class="author">Daniel Kahneman</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                        <div class="school-class">
+                            <span class="material-symbols-outlined">School</span>
+                            <span>Psychology for Policy: Design, Leadership, and Communication (SPI342)</span>
+                        </div>
+                        <a href="">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/contagious_book_cover.jpg" alt="Contagious by Jonah Berger Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: #ff9a3c;">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">Contagious</span>
+                            <span class="subtitle">Why Things Catch On</span>
+                        </div>
+                        <div class="author">Jonah Berger</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                        <a href="https://www.amazon.com/Contagious-Things-Catch-Jonah-Berger/dp/1451686587">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>    
+        
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/conversations_with_friends_cover.jpg" alt="Conversations With Friends by Sally Rooney Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: #ffc93c;">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">Conversations With Friends</span>
+                        </div>
+                        <div class="author">Sally Rooney</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                        <a href="https://www.amazon.com/Conversations-Friends-Novel-Sally-Rooney/dp/0451499050">Image Source</a>
+                    </div>
+                </div>
+            </div>
+      
+        </div>
+
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/educated_cover.jpg" alt="Educated by Tara Westover Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: rgb(125, 6, 6);">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">Educated</span>
+                            <span class="subtitle">A Memoir</span>
+                        </div>
+                        <div class="author">Tara Westover</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                        <a href="https://www.google.com/search?sca_esv=2d3a2588b0a29a87&q=educated&tbm=isch&source=lnms&sa=X&ved=2ahUKEwig6eTyjteEAxVWEFkFHQrKD6YQ0pQJegQICRAB&biw=1440&bih=813&dpr=2#imgrc=bmfnPFqJyn0YrM">Image Source</a>
+                    </div>
+                </div>
+            </div>
+      
+        </div>
+
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/the_love_of_my_life_cover.jpeg" alt="The Love of My Life by Rosie Walsh Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: palevioletred;">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">The Love of My Life</span>
+                            <span class="subtitle">A Novel</span>
+                        </div>
+                        <div class="author">Rosie Walsh</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                        <a href="https://www.google.com/search?sca_esv=2d3a2588b0a29a87&q=the+love+of+my+life+book&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjPtO-Uj9eEAxX8F1kFHYh6CRkQ0pQJegQICxAB&biw=1440&bih=813&dpr=2#imgrc=uUgyPYNf9mL_SM">Image Source</a>
+                    </div>
+                </div>
+            </div>
+      
+        </div>
+      
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/thinking_in_bets.jpg" alt="Thinking In Bets by Annie Duke Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: rgb(237, 113, 68);">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">Thinking In Bets</span>
+                            <span class="subtitle">Making Smarter Decisions When You Don't Have All The Facts</span>
+                        </div>
+                        <div class="author">Annie Duke</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                        <a href="https://www.amazon.com/Thinking-Bets-Making-Smarter-Decisions/dp/0735216355">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/the_life_you_can_save_cover.png" alt="The Life You Can Save by Peter Singer Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: maroon;">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">The Life You Can Save</span>
+                            <span class="subtitle">How To Do Your Part To End World Poverty</span>
+                        </div>
+                        <div class="author">Peter Singer</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                        <div class="school-class">
+                            <span class="material-symbols-outlined">School</span>
+                            <span>Practical Ethics (CHV310)</span>
+                        </div>
+                        <a href="https://www.google.com/search?q=the+life+you+can+save+peter+singer+cover&tbm=isch&ved=2ahUKEwiI3PPMq9aEAxXgFGIAHSJ-Bt0Q2-cCegQIABAA&oq=the+life+you+can+save+peter+singer+cover&gs_lp=EgNpbWciKHRoZSBsaWZlIHlvdSBjYW4gc2F2ZSBwZXRlciBzaW5nZXIgY292ZXJI7Q5QighY2A1wAHgAkAEAmAFMoAHhA6oBATe4AQPIAQD4AQGKAgtnd3Mtd2l6LWltZ8ICBRAAGIAEwgIHEAAYgAQYGMICBBAAGB6IBgE&sclient=img&ei=r4HjZcjIMeCpiLMPovyZ6A0&bih=813&biw=1440#imgrc=p2YrgvBrKLxVMM">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/outliers.jpg" alt="Outliers by Malcolm Gladwell Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: rgb(54, 38, 159);">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">Outliers</span>
+                            <span class="subtitle">The Story of Success</span>
+                        </div>
+                        <div class="author">Malcolm Gladwell</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                        <a href="https://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/031602497X">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/the_secret_history.jpg" alt="The Secret History by Donna Tartt Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: darkslategray;">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">The Secret History</span>
+                        </div>
+                        <div class="author">Donna Tartt</div>
+                        <div class="recommended-by">
+                            <span class="material-symbols-outlined">reviews</span>
+                            <span>Recommended By: Talia Gill</span>
+                        </div>
+                        <a href="https://www.amazon.com/Secret-History-Tartt-Donna/dp/0140167773">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/small_great_things.jpg" alt="Small Great Things by Jodi Picoult Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: rgb(131, 211, 243);">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">Small Great Things</span>
+                            <span class="subtitle">A Novel</span>
+                        </div>
+                        <div class="author">Jodi Picoult</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                        <a href="https://www.amazon.com/Small-Great-Things-Jodi-Picoult/dp/0345544951">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/dollars_and_sense.jpg" alt="Dollars and Sense Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: rgb(4, 4, 199);">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">Dollars and Sense</span>
+                            <span class="subtitle">How We Misthink Money And How To Spend Smarter</span>
+                        </div>
+                        <div class="author">Dan Ariely</div>
+                        and
+                        <div class="author">Jeff Kreisler</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                        <a href="https://www.amazon.com/Dollars-Sense-Misthink-Money-Smarter/dp/0062651218">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/think_again.jpg" alt="Think Again by Adam Grant Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: skyblue;">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">Think Again</span>
+                            <span class="subtitle">The Power of Knowing What You Don't</span>
+                        </div>
+                        <div class="author">Adam Grant</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                        <a href="https://amazon.com/Think-Again-Power-Knowing-What/dp/1984878107">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/civil_action_cover.jpg" alt="A Civil Action by Jonathan Harr Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: rgb(2, 45, 59);">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">A Civil Action</span>
+                        </div>
+                        <div class="author">Jonathan Harr</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                        <div class="school-class">
+                            <span class="material-symbols-outlined">School</span>
+                            <span>Practical Models for Environmental Systems (ENV302)</span>
+                        </div>
+                        <a href="https://www.amazon.com/Civil-Action-Jonathan-Harr/dp/0679772677">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/animal_liberation_cover.jpg" alt="Animal Liberation Now by Peter Singer Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: rgb(132, 51, 51);">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">Animal Liberation Now</span>
+                            <span class="subtitle">The Definitive Classic Renewed</span>
+                        </div>
+                        <div class="author">Peter Singer</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                        <div class="school-class">
+                            <span class="material-symbols-outlined">School</span>
+                            <span>Practical Ethics (CHV310)</span>
+                        </div>
+                        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FAnimal-Liberation-Now-Definitive-Classic%2Fdp%2F0063226707&psig=AOvVaw1AVSBiUPel9ttGezHRhcHm&ust=1709521903128000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMCt8b-P14QDFQAAAAAdAAAAABAE">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/screwtape_letters.jpg" alt="The Screwtape Letters by C.S. Lewis Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: rgb(239, 205, 12);">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">The Screwtape Letters</span>
+                        </div>
+                        <div class="author">C.S. Lewis</div>
+                        <div class="recommended-by">
+                            <span class="material-symbols-outlined">reviews</span>
+                            <span>Recommended By: Anne Grinder</span>
+                        </div>
+                        <a href="https://www.amazon.com/Screwtape-Letters-C-S-Lewis/dp/0060652934">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/woman_in_window.jpg" alt="The Woman In The Window by A. J. Finn Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: rgb(158, 7, 7);">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">The Woman In The Window</span>
+                            <span class="subtitle">A Novel</span>
+                        </div>
+                        <div class="author">A. J. Finn</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                       
+                        <a href="https://www.amazon.com/Woman-Window-Novel-Finn/dp/0062678426">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/my_sisters_keeper.jpg" alt="My Sister's Keeper by Jodi Picoult Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: rgb(240, 159, 171);">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">My Sister's Keeper</span>
+                            <span class="subtitle">A Novel</span>
+                        </div>
+                        <div class="author">Jodi Picoult</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                       
+                        <a href="https://www.amazon.com/My-Sisters-Keeper-Jodi-Picoult/dp/141654917X">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/prayer_for_owen_meany.jpg" alt="A Prayer For Owen Meany Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: rgb(136, 183, 202);">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">A Prayer For Owen Meany</span>
+                            <span class="subtitle">A Novel</span>
+                        </div>
+                        <div class="author">John Irving</div>
+                        <div class="recommended-by">
+                            <span class="material-symbols-outlined">reviews</span>
+                            <span>Recommended By: Talia Gill</span>
+                        </div>
+                       
+                        <a href="https://www.amazon.com/Prayer-Owen-Meany-John-Irving/dp/006220422X">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="reading">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="book_covers/normal_people.jpg" alt="Normal People by Sally Rooney Book Cover">
+                    </div>
+                    <div class="flip-card-back" style="background-color: #8bc34a">
+                        <br>
+                        <br>
+                        <div>
+                            <span class="title">Normal People</span>
+                            <span class="subtitle">A Novel</span>
+                        </div>
+                        <div class="author">Sally Rooney</div>
+                        <div class="rating">
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                            <span class="material-symbols-outlined">book_2</span>
+                        </div>
+                       
+                        <a href="https://www.amazon.com/Normal-People-Novel-Sally-Rooney/dp/1984822179">Image Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div>
+        <br>
+        <br>
+        <footer>Link to my class homepage: <a href="../index.html">Aly VIS208 Homepage</a></footer>
+    </div>
+
+  </body>
+
+</html>
