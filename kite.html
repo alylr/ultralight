@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>Kite Flying</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <style>
+
+            * {
+                font-family: "Handlee";
+            }
+
+            body {
+                background-color: skyblue;
+            }
+
+            video {
+                max-height: 100vh;
+            }
+            img {
+                max-height: 50vh;
+                
+            }
+
+            .heading {
+                padding: 1em;
+                border: 1px solid whitesmoke;
+                border-radius: 50px;
+                font-size: 2em;
+                margin-bottom: 1em;
+                position: absolute;
+                left: 5%;
+                right: 5%;
+                top: 1em;
+                background: white;
+                box-shadow: 0 4px 8px 0 rgba(0.2,0.2,0.2,0.2);
+                text-align: center;
+                color: rgb(151, 151, 151);
+            }
+
+            .content {
+                padding: 1em;
+                border: 1px solid whitesmoke;
+                border-radius: 50px;
+                font-size: 1em;
+                margin-bottom: 1em;
+                position: absolute;
+                left: 8em;
+                right: 3em;
+                top: 20em;
+                background: white;
+                box-shadow: 0 4px 8px 0 rgba(0.2,0.2,0.2,0.2);
+                text-align: center;
+                color: rgb(151, 151, 151);
+            }
+
+            .all-grids {
+                margin-top: 10em;
+                position: relative;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                column-gap: 50px;
+                row-gap: 50px;
+                padding: auto;
+                position: relative;
+                margin-left: 3em;
+                margin-right: 3em;
+                grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+                grid-auto-flow: row;
+            }
+
+            .content-1 {
+                padding: 1em;
+                border: 1px solid whitesmoke;
+                border-radius: 50px;
+                font-size: 1em;
+                margin-bottom: 1em;
+                
+                background: white;
+                box-shadow: 0 4px 8px 0 rgba(0.2,0.2,0.2,0.2);
+                text-align: center;
+                color: rgb(151, 151, 151);
+            }
+
+            .content-1 img,
+            .content-1 video {
+                max-width: 90%;
+                max-height: 90%;
+                position: relative;
+                border: 1px solid whitesmoke;
+                border-radius: 50px;
+            }
+            
+            .item {
+                margin: 0;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+
+            .grid-container-1 {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                column-gap: 50px;
+                row-gap: 50px;
+                padding: auto;
+                position: relative;
+                margin-left: 3em;
+                margin-right: 3em;
+                grid-auto-flow: row;
+            }
+
+            .footer {
+                position: relative;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                padding: 1em;
+                border: 1px solid whitesmoke;
+                border-radius: 50px;
+                font-size: 1em;
+                margin-left: 3em;
+                margin-right: 3em;
+                background: white;
+                box-shadow: 0 4px 8px 0 rgba(0.2,0.2,0.2,0.2);
+                text-align: center;
+                color: rgb(151, 151, 151);
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="heading">
+            BUILDING KITES
+        </div>
+
+        <div class="all-grids">
+            <div class="grid-container-1">
+                <div>
+                    <div class="item">
+                        <div class="content-1">
+                            we built ultralight kites based on <a href="https://www.nytimes.com/interactive/2021/05/19/style/how-to-build-a-bird-kite.html">this tutorial!</a>
+                        </div>
+                        <div class="content-1">
+                            <img src="kite/kite_images/kite_image.jpeg">
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="item">
+                        <div class="content-1">
+                            this is my kite
+                        </div>
+    
+                        <div class="content-1">
+                            <video controls>
+                                <source src="kite/kite_videos/kite_above_vis.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="item">
+                        <div class="content-1">
+                            our class went outside to fly the kites together
+                        </div>
+                        
+                        <div class="content-1">
+                            <img src="kite/kite_images/class_outside.jpeg">
+                        </div>
+                    </div> 
+                </div>
+
+                <div>
+                    <div class="item">
+                        <div class="content-1">
+                            here are many kites flying near the visual arts building
+                        </div>
+    
+                        <div class="content-1">
+                            <video controls>
+                                <source src="kite/kite_videos/kite_and_class.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid-container">
+    
+                
+    
+    
+                <div>
+                    <div class="item">
+                        <div class="content-1">
+                            we all flew our kites
+                        </div>
+    
+                        <div class="content-1">
+                            <video controls>
+                                <source src="kite/kite_videos/class_flying_kites.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="item">
+                        <div class="content-1">
+                            it was very windy
+                        </div>
+    
+                        <div class="content-1">
+                            <video controls>
+                                <source src="kite/kite_videos/windy.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div>
+                    <div class="item">
+                        <div class="content-1">
+                            i flew my kite near Nassau Hall
+                        </div>
+    
+                        <div class="content-1">
+                            <video controls>
+                                <source src="kite/kite_videos/near_nassau_hall.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div>
+                    <div class="item">
+                        <div class="content-1">
+                            and near my sophomore year dorm: Witherspoon Hall
+                        </div>
+    
+                        <div class="content-1">
+                            <video controls>
+                                <source src="kite/kite_videos/witherspoon.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div>
+                    <div class="item">
+                        <div class="content-1">
+                            the sun could shine through the clouds and through the transparent kite <!--looked cool with the sun shining through the clouds-->
+                        </div>
+    
+                        <div class="content-1">
+                            <video controls>
+                                <source src="kite/kite_videos/sun_through_clouds.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div>
+                    <div class="item">
+                        <div class="content-1">
+                            sometimes the kite fell
+                        </div>
+    
+                        <div class="content-1">
+                            <video controls>
+                                <source src="kite/kite_videos/kite_falling.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
+
+
+        <div class="footer">
+            Link to my class homepage: <a href="index.html">Aly VIS208 Homepage</a>
+        </div>
+       
+    </body>
+
+</html> 
