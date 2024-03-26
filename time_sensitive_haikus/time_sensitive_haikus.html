@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>Time Sensitive Haikus</title>
+        <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+
+        <meta charset="utf-8">
+        <style>
+            * {
+                font-family: Neucha;
+                
+            }
+
+            #morning, 
+            #afternoon, 
+            #evening, 
+            #night {
+                opacity: 0;
+                display: none;
+            }
+
+            body[data-status="morning"] #morning {
+                opacity: 1;
+                display: inline-block;
+                background-color: lightpink;
+            }
+
+            body[data-status="afternoon"] #afternoon {
+                opacity: 1;
+                display: inline-block;
+                background-color: lightgreen;
+            }
+
+            body[data-status="evening"] #evening {
+                opacity: 1;
+                display: inline-block;
+                background-color: darkcyan;
+            }
+
+            body[data-status="night"] #night {
+                opacity: 1;
+                display: inline-block;
+                background-color: violet;
+            }
+
+
+            .title {
+                text-align: center;
+                font-size: 18px;
+                justify-content: center;
+                
+            }
+            
+            .haiku {
+                display: inline-block;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                text-align: center;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="title">
+            <h1>AROUND NASSAU HALL</h1>
+        </div>
+
+        <section id="morning">
+            <div class="haiku">
+                <p>
+                    Flowers start to bloom.
+                    <br>
+                    Students laugh as they walk home.
+                    <br>
+                    It's finally spring.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="afternoon">
+            <div class="haiku">
+                <p>
+                    The clouds fade away.
+                    <br>
+                    People emerge and birds chirp.
+                    <br>
+                    I should wear sunscreen.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="evening">
+            <div class="haiku">
+                <p>
+                    Tourists take photos.
+                    <br>
+                    Students forget to look up.
+                    <br>
+                    A beautiful place.
+                </p>
+            </div>
+        </section>
+        
+                
+        <section id="night">
+            <div class="haiku">
+                <p>
+                    Intersecting paths
+                    <br>
+                    Guide many people past here
+                    <br>
+                    Entering campus.
+                </p>
+            </div>
+        </section>
+    
+        <br>  
+        <br>     
+        <div>
+            <footer>Inspired by Austin Wade Smith</footer>
+            <footer>Link to my class homepage: <a href="index.html">Aly VIS208 Homepage</a></footer>
+        </div>
+    
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html> 
