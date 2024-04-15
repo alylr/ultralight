@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>local website</title>
+        <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+
+
+        <meta charset="utf-8">
+        <style>
+            * {
+                font-family: Neucha;
+                   
+            }
+
+
+            /* box position relative and then all of the lines and circle inside of it be position absolute */
+
+            /* https://www.freecodecamp.org/news/css-shapes-explained-how-to-draw-a-circle-triangle-and-more-using-pure-css/ */
+
+    
+
+
+            .circleContainer {
+                position: relative;
+                margin: auto;
+                height: 40vw;
+                /*to make the height and width responsive*/
+                width: 40vw;
+                /*background: url(clock.png) no-repeat; */
+                /*setting our background image*/
+                background-size: 100%;
+
+                shape-outside: circle();
+
+            }
+
+
+
+
+            .dot {
+                width: 6vw;
+                height: 6vw;
+                border-radius: 50%;
+                background: #ccc;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                position: absolute;
+                z-index: 10;
+                border-color: black;
+                border-width: 15px;
+            }
+
+
+
+            .line {
+                width: 0.5vw;
+                height: 20vw;
+                border-radius: 50%;
+                background: black;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                position: absolute;
+                z-index: 5;
+                top: 20vw;
+                left: 50%;
+                margin-left: -2px;
+                border-top-left-radius: 50%;
+                border-top-right-radius: 50%;
+                transform-origin: top;
+
+                pointer-events: none;
+            }
+
+            .pos1 {
+                transform: rotate(24deg);
+            }
+
+            .pos2 {
+                transform: rotate(48deg);
+            }
+
+            .pos3 {
+                transform: rotate(72deg);
+            }
+
+            .pos4 {
+                transform: rotate(96deg);
+            }
+
+            .pos5 {
+                transform: rotate(120deg);
+            }
+
+            .pos6 {
+                transform: rotate(144deg);
+            }
+
+            .pos7 {
+                transform: rotate(168deg);
+            }
+
+            .pos8 {
+                transform: rotate(192deg);
+            }
+
+            .pos9 {
+                transform: rotate(216deg);
+            }
+
+            .pos10 {
+                transform: rotate(240deg);
+            }
+
+            .pos11 {
+                transform: rotate(264deg);
+            }
+
+            .pos12 {
+                transform: rotate(288deg);
+            }
+
+            .pos13 {
+                transform: rotate(312deg);
+            }
+
+            .pos14 {
+                transform: rotate(336deg);
+            }
+
+
+
+            span {
+                position: absolute;
+                z-index: 4000;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;   
+            }
+
+
+            .h1 {
+                /*position: absolute;*/
+                bottom: 90%;
+                right: 47%;
+            }
+
+            .h2 {
+                bottom: 20%;
+                /*left: 43%;*/
+                top: 30%;
+            }
+
+            .h3 {
+                bottom: 20%;
+                left: 28%;
+            }
+
+            .h4 {
+                /*top: 20vh;
+                left: 30vw;*/
+                bottom: 50%;
+                left: 80%;
+            }
+
+            .h5 {
+                top: 30vw;
+                top: 27%;
+                left: 27%;
+            }
+
+            .h6 {
+                top: 72%;
+                left: 77%; 
+            }
+
+            .h7 {
+                top: 15%;
+                left: 38%;
+            }
+
+            .h8 {
+                top: 80%;
+                left: 38%;
+            }
+
+            .h9 {
+                top: 80%;
+                left: 49%;
+            }
+
+            .h10 {
+                top: 50%;
+                left: 75%;
+            }
+
+            .h12 {
+                top: 20vw;
+                left: 20vw;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="title">
+            <h1>AROUND NASSAU HALL</h1>
+        </div>
+    
+        <div>        
+            <div class="circleContainer">
+                <div class="dot"></div>
+                <div>
+                    <div class="line"></div>
+                    <div class="line pos1"></div>
+                    <div class="line pos2"></div>
+                    <div class="line pos3"></div>
+                    <div class="line pos4"></div>
+                    <div class="line pos5"></div>
+                    <div class="line pos6"></div>
+                    <div class="line pos7"></div>
+                    <div class="line pos8"></div>
+                    <div class="line pos9"></div>
+                    <div class="line pos10"></div>
+                    <div class="line pos11"></div>
+                    <div class="line pos12"></div>
+                    <div class="line pos13"></div>
+                    <div class="line pos14"></div>
+                </div>
+
+                <span class="h1">
+                    <a href="coffee.html"><img src="icons/icons8-coffee-cup-50.png"></a>
+                </span>
+            
+                <span class="h2">
+                    <a href="libraries.html"><img src="icons/icons8-open-book-50.png"></a>
+                </span>
+
+                <span class="h3">
+                    <a href="movies.html"><img src="icons/icons8-movie-50.png"></a>
+                </span>
+
+                <span class="h4">
+                    <a href="fitness.html"><img src="icons/icons8-dumbbell-50.png"></a>
+                </span>
+
+                <span class="h5">
+                    <a href="outdoors.html"><img src="icons/icons8-flower-50.png"></a>
+                </span>
+
+                <span class="h6">
+                    <a href="icecream.html"><img src="icons/icons8-ice-cream-cone-50.png"></a>
+                </span>
+
+                <span class="h7">
+                    <a href="academics.html"><img src="icons/icons8-university-50.png"></a>
+                </span>
+
+                <span class="h8">
+                    <a href="breakfast.html"><img src="icons/icons8-breakfast-68.png"></a>
+                </span>
+
+                <span class="h9">
+                    <a href="drinks.html"><img src="icons/icons8-cocktail-64.png"></a>
+                </span>
+
+                <span class="h10">
+                    <a href="restaurants.html"><img src="icons/icons8-restaurant-50.png"></a>
+                </span>
+
+            </div>
+
+
+    
+            
+
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <div>
+            all icons downloaded from <a href="https://icons8.com/">icons8</a>
+        </div>
+
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html> 
