@@ -3,7 +3,6 @@
   <head>
     <title>Academics</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
 
 
@@ -14,12 +13,14 @@
         }
 
         body {
-            padding: 5em;
-	        background-color: #fffff2;
+            /*padding: 5em;*/
+	        background-color: #ede9e7;
 	        margin: 2em;
             font-size: 17px;
             line-height: 24px;
             padding-top: 0;
+
+            
         }
 
         main {
@@ -34,7 +35,7 @@
             max-width: 100%;
             position: relative;
             justify-content: center;
-            margin-top: 45%;
+            margin-top: 35%;
 
         }
 
@@ -80,19 +81,19 @@
 
 
         .flip-card-front {
-            background-color: coral;
+            background-color: #bf6a49;
             text-align: center;
-            padding-left: 5%;
-            padding-right: 5%;
+            /* padding-left: 5%;
+            padding-right: 5%; */
         }
 
         .flip-card-back {
-            background-color: #2980b9;
+            background-color: #e3c4b4;
             color: white;
             transform: rotateY(180deg);
             text-align: center;
-            padding-left: 5%;
-            padding-right: 5%;
+            /* padding-left: 5%;
+            padding-right: 5%; */
         }
 
         img {
@@ -116,13 +117,27 @@
             font-family: "Indie Flower";
         }
 
+        .page-title {
+            width: 300px;
+            height: fit-content;
+            text-align: center;
+        }
+
+        .map {
+            width: 300px;
+            height: fit-content;
+            justify-content: center;
+            padding-left: 40%;
+        }
+
     </style>
 
   </head>
 
   <body>
     <main>
-        <div style="text-align: center;">
+        <!-- <div style="text-align: center;"> -->
+        <div class="page-title">
             <h1>ACADEMICS</h1>
             <h1>IN PRINCETON</h1>
         </div>
@@ -133,7 +148,7 @@
                     <div class="flip-card-front">
                         <div class="name">Julis Romo Rabinowitz Building & Louis A. Simpson International Building</div>
                     </div>
-                    <div class="flip-card-back" style="background-color: rgb(185, 141, 31);">
+                    <div class="flip-card-back">
                     
                         
                         <div class="name">Economics</div>
@@ -154,10 +169,9 @@
                     <div class="flip-card-front">
                         <div class="name">McCosh Hall</div>
                     </div>
-                    <div class="flip-card-back" style="background-color: darkolivegreen;">
-                        <br>
-                        <br>
-                        <br>
+                    <div class="flip-card-back">
+                        <div class="name">History</div>
+
                         <div class="address">McCosh Hall</div>
                         <div class="address">Princeton, NJ</div>
                         <div class="address">08544</div>
@@ -176,7 +190,7 @@
                     <div class="flip-card-front">
                         <div class="name">Sherrerd Hall</div>
                     </div>
-                    <div class="flip-card-back" style="background-color: darkolivegreen;">
+                    <div class="flip-card-back">
                     
                 
                         <div class="name">ORFE</div>
@@ -199,7 +213,7 @@
                     <div class="flip-card-front">
                         <div class="name">Robertson Hall</div>
                     </div>
-                    <div class="flip-card-back" style="background-color: darkolivegreen;">
+                    <div class="flip-card-back">
                 
                     
                         <div class="name">SPIA</div>
@@ -214,13 +228,13 @@
         </div>
 
 
-    </main>
+        <div class="map">
+            <br>
+            <br>
+            <a href="index.html"><span><img src="icons/icons8-map-32.png"></span></a>
+        </div>
 
-    <div>
-        <br>
-        <br>
-        <a href="index.html"><span class="material-symbols-outlined">map</span></a>
-    </div>
+    </main>
 
   </body>
 
