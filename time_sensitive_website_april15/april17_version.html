@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>local website</title>
+
+
+        <meta charset="utf-8">
+        <style>
+            * {
+                font-family: Roboto;
+                 
+            }
+
+
+            /* all icons downloaded from Icons8 at https://icons8.com/ */
+
+            /* box position relative and then all of the lines and circle inside of it be position absolute */
+
+            /* https://www.freecodecamp.org/news/css-shapes-explained-how-to-draw-a-circle-triangle-and-more-using-pure-css/ */
+
+            .circleContainer {
+                position: relative;
+                margin: auto;
+                background-size: 100%;
+                top: 50%;
+                bottom: 50%;
+                width: 80vw;
+                height: 80vw;
+
+            }
+
+            body {
+                background-color: #ffeed0;   
+                display: inline-block;
+                justify-content: center;
+                padding-left: 10%;
+            }
+
+
+            .dot {
+                width: 6vw;
+                height: 6vw;
+                border-radius: 50%;
+                background: #ccc;
+                background: #7F96A6;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                position: absolute;
+                z-index: 10;
+                border-color: black;
+                border-width: 15px;
+            }
+
+
+
+            .line {
+                width: 0.7%;
+                height: 40%;
+                border-radius: 50%;
+                background: black;
+                /*background: #2A6261;*/
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                position: absolute;
+                z-index: 5;
+                top: 40%;
+                left: 50%;
+                margin-left: -2px;
+                border-top-left-radius: 50%;
+                border-top-right-radius: 50%;
+                transform-origin: top;
+
+                pointer-events: none;
+
+                opacity: 0.2;
+            }
+
+
+            .pos1 {
+                transform: rotate(24deg);
+            }
+
+            .pos2 {
+                transform: rotate(48deg);
+            }
+
+            .pos3 {
+                transform: rotate(72deg);
+            }
+
+            .pos4 {
+                transform: rotate(96deg);
+            }
+
+            .pos5 {
+                transform: rotate(120deg);
+            }
+
+            .pos6 {
+                transform: rotate(144deg);
+            }
+
+            .pos7 {
+                transform: rotate(168deg);
+            }
+
+            .pos8 {
+                transform: rotate(192deg);
+            }
+
+            .pos9 {
+                transform: rotate(216deg);
+            }
+
+            .pos10 {
+                transform: rotate(240deg);
+            }
+
+            .pos11 {
+                transform: rotate(264deg);
+            }
+
+            .pos12 {
+                transform: rotate(288deg);
+            }
+
+            .pos13 {
+                transform: rotate(312deg);
+            }
+
+            .pos14 {
+                transform: rotate(336deg);
+            }
+
+            span {
+                position: absolute;
+                z-index: 4000;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                
+                /* height: 5%;
+                width: 5%; */
+                height: 50px;
+                width: 50px;
+            }
+
+
+            .h1 {
+                top: 0%;
+                left: 12%;
+            }
+
+            .h2 {
+                left: -3%;
+                top: 20%;
+            }
+
+            .h3 {
+                top: -5%;
+                left: 33%;
+            }
+
+            .h4 {
+                left: 72%;
+                top: 33%;
+            }
+
+            .h5 {
+                top: 37%;
+                left: -9%;
+            }
+
+            .h6 {
+                top: 62%;
+                left: 78%;
+            }
+
+            .h7 {
+                top: 29%;
+                left: 56%;
+            }
+
+            .h8 {
+                top: 68%;
+                left: 46%;
+            }
+
+            .h9 {
+                top: 66%;
+                left: 61%;
+            }
+
+            .h10 {
+                top: 39%;
+                left: 83%;
+            }
+
+            .h11 {
+                top: 90%;
+                left: 26%;
+            }
+
+            .h12 {
+                top: 77%;
+                left: 10%;
+            }
+
+            .h13 {
+                top: 57%;
+                left: -8%;
+            }
+
+            .h14 {
+                top: 54%;
+                left: 87%;
+            }
+
+            .h15 {
+                top: 46%;
+                left: 88%;
+            }
+
+            .title {
+                padding-top: 5%;
+                padding-bottom: 5%;
+                text-align: center;
+                font-size: 1.2vh;
+                padding-right: 5%;
+            }
+
+
+
+            .h1, 
+            .h2, 
+            .h3, 
+            .h4, 
+            .h5, 
+            .h6, 
+            .h7, 
+            .h8, 
+            .h9, 
+            .h10, 
+            .h11, 
+            .h12, 
+            .h13, 
+            .h14, 
+            .h15 {
+                opacity: 0.2;
+            }
+
+
+            body[data-status="morning"] .morning {
+                opacity: 1;
+            }
+
+            body[data-status="afternoon"] .afternoon {
+                opacity: 1;
+            }
+
+            body[data-status="evening"] .evening {
+                opacity: 1;
+            }
+
+            body[data-status="night"] .night {
+                opacity: 1;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <br>
+        <div class="title">
+            <h1>AROUND NASSAU HALL</h1>
+        </div>
+    
+        <div>        
+            <div class="circleContainer">
+                <div class="dot"></div>
+                <div>
+                    <div class="line morning"></div>
+                    <div class="line pos1 afternoon"></div>
+                    <div class="line pos2 morning night"></div>
+                    <div class="line pos3 morning evening"></div>
+                    <div class="line pos4 afternoon"></div>
+                    <div class="line pos5 afternoon evening"></div>
+                    <div class="line pos6 morning afternoon"></div>
+                    <div class="line pos7 night"></div>
+                    <div class="line pos8 morning afternoon"></div>
+                    <div class="line pos9 morning afternoon"></div>
+                    <div class="line pos10 evening"></div>
+                    <div class="line pos11 morning afternoon"></div>
+                    <div class="line pos12 afternoon evening"></div>
+                    <div class="line pos13 afternoon evening night"></div>
+                    <div class="line pos14 night"></div>
+                </div>
+
+                <div>
+                    <span class="h1 morning afternoon">
+                        <a href="coffee.html"><img src="icons/icons8-coffee-cup-50.png"></a>
+                    </span>
+                
+                    <span class="h2 afternoon evening">
+                        <a href="libraries.html"><img src="icons/icons8-open-book-50.png"></a>
+                    </span>
+
+                    <span class="h3 evening night">
+                        <a href="movies.html"><img src="icons/icons8-movie-50.png"></a>
+                    </span>
+
+                    <span class="h4 morning afternoon">
+                        <a href="fitness.html"><img src="icons/icons8-dumbbell-50.png"></a>
+                    </span>
+
+                    <span class="h5 afternoon">
+                        <a href="outdoors.html"><img src="icons/icons8-flower-50.png"></a>
+                    </span>
+
+                    <span class="h6 afternoon evening night">
+                        <a href="icecream.html"><img src="icons/icons8-ice-cream-cone-50.png"></a>
+                    </span>
+
+                    <span class="h7 morning afternoon">
+                        <a href="academics.html"><img src="icons/icons8-university-50.png"></a>
+                    </span>
+
+                    <span class="h8 morning">
+                        <a href="breakfast.html"><img src="icons/icons8-breakfast-68.png"></a>
+                    </span>
+
+                    <span class="h9 evening night">
+                        <a href="drinks.html"><img src="icons/icons8-cocktail-64.png"></a>
+                    </span>
+
+                    <span class="h10 evening">
+                        <a href="restaurants.html"><img src="icons/icons8-restaurant-50.png"></a>
+                    </span>
+
+                    <span class="h11 afternoon">
+                        <a href="art.html"><img src="icons/icons8-portrait-50.png"></a>
+                    </span>
+
+                    <span class="h12 morning night">
+                        <a href="dorms.html"><img src="icons/icons8-bed-50.png"></a>
+                    </span>
+
+                    <span class="h13 morning evening">
+                        <a href="train.html"><img src="icons/icons8-train-60.png"></a>
+                    </span>
+
+                    <span class="h14 afternoon evening">
+                        <a href="shopping.html"><img src="icons/icons8-shopping-bag-50.png"></a>
+                    </span>
+
+                    <span class="h15 morning afternoon">
+                        <a href="science.html"><img src="icons/icons8-test-tube-50.png"></a>
+                    </span>
+                </div>
+<!-- 
+                <span class="h1">
+                    <a href="coffee.html"><img src="icons/icons8-coffee-cup-50.png"></a>
+                </span>
+            
+                <span class="h2">
+                    <a href="libraries.html"><img src="icons/icons8-open-book-50.png"></a>
+                </span>
+
+                <span class="h3">
+                    <a href="movies.html"><img src="icons/icons8-movie-50.png"></a>
+                </span>
+
+                <span class="h4">
+                    <a href="fitness.html"><img src="icons/icons8-dumbbell-50.png"></a>
+                </span>
+
+                <span class="h5">
+                    <a href="outdoors.html"><img src="icons/icons8-flower-50.png"></a>
+                </span>
+
+                <span class="h6">
+                    <a href="icecream.html"><img src="icons/icons8-ice-cream-cone-50.png"></a>
+                </span>
+
+                <span class="h7">
+                    <a href="academics.html"><img src="icons/icons8-university-50.png"></a>
+                </span>
+
+                <span class="h8">
+                    <a href="breakfast.html"><img src="icons/icons8-breakfast-68.png"></a>
+                </span>
+
+                <span class="h9">
+                    <a href="drinks.html"><img src="icons/icons8-cocktail-64.png"></a>
+                </span>
+
+                <span class="h10">
+                    <a href="restaurants.html"><img src="icons/icons8-restaurant-50.png"></a>
+                </span>
+
+                <span class="h11">
+                    <a href="art.html"><img src="icons/icons8-portrait-50.png"></a>
+                </span>
+
+                <span class="h12">
+                    <a href="dorms.html"><img src="icons/icons8-bed-50.png"></a>
+                </span>
+
+                <span class="h13">
+                    <a href="train.html"><img src="icons/icons8-train-60.png"></a>
+                </span>
+
+                <span class="h14">
+                    <a href="shopping.html"><img src="icons/icons8-shopping-bag-50.png"></a>
+                </span>
+
+                <span class="h15">
+                    <a href="science.html"><img src="icons/icons8-test-tube-50.png"></a>
+                </span> -->
+
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <!-- <div>
+            all icons downloaded from <a href="https://icons8.com/">icons8</a>
+        </div> -->
+
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html> 
