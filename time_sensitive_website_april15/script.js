@@ -21,3 +21,14 @@ updateTimeStatus(); // Call the function to set initial status
 
 // Update status every second
 setInterval(updateTimeStatus, 1000);
+
+
+
+
+var cards = document.querySelectorAll('.flip-card-inner');
+
+[...cards].forEach((card)=>{
+  card.addEventListener( 'click', function() {
+    card.classList.toggle('is-flipped');
+  });
+});
